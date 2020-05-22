@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: "SarsaparillaNF";
+  src: url("../scss/font/SarsaparillaNF.ttf");
+}
+@font-face {
+  font-family: "RiotSquadNF";
+  src: url("../../scss/font/RiotSquadNF.ttf");
+}
+@font-face {
+  font-family: "CATHohenzollern.ttf";
+  src: url("../../scss/font/CAT Hohenzollern.ttf");
+}
+@media (max-width: 360px) {
+  h1 {
+    color: green;
+  }
+}
+@media (min-width: 375px) {
+  h1 {
+    color: blue;
+  }
+}
+@media (min-width: 411px) {
+  h1 {
+    color: yellow;
+  }
+}
+@media (min-width: 414px) {
+  h1 {
+    color: black;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    color: purple;
+  }
+}
+@media (min-width: 1024px) {
+  h1 {
+    color: red;
+  }
+}
+@media (min-width: 1025px) {
+  h1 {
+    color: sandybrown;
+  }
+}
+@media (min-width: 1440px) {
+  h1 {
+    color: slateblue;
+  }
+}
+@media (min-width: 2560px) {
+  h1 {
+    color: orangered;
+  }
+}
+
+body {
+  background-color: #66b9e9;
+  margin: 3.5rem;
+}
+
+#mainTitle {
+  font-family: "SarsaparillaNF";
+  margin: 25px;
+  margin-bottom: 5px;
+  padding: 20px;
+  font-size: 80px;
+  text-align: center;
+  align-content: center;
+  color: white;
+}
+
+#subTitle {
+  text-align: center;
+  align-content: center;
+  font-family: "RiotSquadNF";
+  font-size: 42px;
+}
+
+#interpretation-text {
+  font-family: "RiotSquadNF";
+  margin: 20px;
+  margin-top: 5px;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  text-align: justify;
+}
+
+#tarotCards {
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#card1, #card2, #card3 {
+  border: 2px #0f28b4 solid;
+  width: 18rem;
+  height: 30rem;
+  border-radius: 6%;
+  background-image: url(../../img/tarotCards78/reverseCard.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#cardTitle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px;
+  font-size: 20px;
+}
+
+#title1, #title2, #title3 {
+  border-radius: 6%;
+  width: 18rem;
+  height: 4.5rem;
+  font-size: 24px;
+  font-family: "SarsaparillaNF";
+  background-image: url(../../img/kindpng_796372.png);
+  background-size: 18rem 4.4rem;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#tarotDescription {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px;
+  font-size: 17px;
+}
+
+#description1, #description2, #description3 {
+  border: 2px black solid;
+  width: 18rem;
+  height: 8rem;
+  border-radius: 6%;
+}
+
+footer {
+  margin: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: flex-end;
+  font-family: "RiotSquadNF";
+}
+
+#extras {
+  margin: 20px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-decoration: none;
+  align-content: center;
+  font-family: "SarsaparillaNF";
+}
+
+a:hover {
+  color: #FFDC5B;
+}
+
+a:visited {
+  color: #8D55FF;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

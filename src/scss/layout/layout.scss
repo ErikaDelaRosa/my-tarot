@@ -1,0 +1,138 @@
+//here is where we will style the main page.
+
+body {
+    background-color: rgb(102, 185, 233);
+    //background-image: url();
+    margin:3.5rem;
+    //font-family:'RiotSquadNF';
+   // background-image: url();
+   // background-repeat: no-repeat;
+   //background-size: 110rem 61rem;
+}
+//main title of the page
+#mainTitle {
+    //border: 3px black solid;
+    font-family:'SarsaparillaNF';
+    margin: 25px;
+    margin-bottom: 5px;
+    padding:20px;
+    font-size: 80px;
+    text-align: center;
+    align-content: center;
+    color:white;
+}
+//subtitle of the page
+#subTitle{
+    text-align: center;
+    align-content: center;
+    font-family:'RiotSquadNF';
+    font-size: 42px;
+}
+//content of the subtitle 
+#interpretation-text {
+    //border: 3px black solid;
+    font-family:'RiotSquadNF';
+    margin:20px;
+    margin-top:5px;
+    padding:20px;
+    font-size: 20px;
+    text-align: center;
+    //display: flex;
+    color:white;
+    text-align: justify; 
+   // border-radius: 25px;
+}
+//card container 
+#tarotCards {
+    margin:30px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content: space-around;
+    align-items: center; //baseline
+}
+#card1, #card2, #card3 {
+    border:2px rgb(15, 40, 180) solid;
+    width: 18rem;
+    height: 30rem;
+    border-radius: 6%;
+    background-image: url(../../img/tarotCards78/reverseCard.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+//title of the cards
+#cardTitle{
+    display: flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content: space-around;
+    align-items: center; //baseline
+    margin:30px;
+    font-size:20px;
+}
+#title1, #title2, #title3{
+    //border:2px black solid;
+    border-radius: 6%;
+    width: 18rem;
+    height: 4.5rem;
+    font-size: 24px;
+    font-family:'SarsaparillaNF';
+    background-image: url(../../img/kindpng_796372.png);
+    background-size: 18rem 4.4rem;
+    color: white;
+    text-align: center;
+    vertical-align:middle ;
+    //display:flex;
+}
+//card description container
+#tarotDescription {
+    display: flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content: space-around;
+    align-items: center; //baseline
+    margin:30px;
+    font-size:17px;
+    //border-radius: 6%;
+}
+#description1, #description2, #description3 {
+    border:2px black solid;
+    width: 18rem;
+    height: 8rem;
+    border-radius: 6%;
+    
+}
+// footer
+footer{
+   // border:3px black solid;
+    margin: 20px;
+    text-align: center;
+    //align-content: space-around;
+    justify-content:center;
+    align-items:flex-end;
+    font-family:'RiotSquadNF';
+}
+
+//container extras to develop in the future
+#extras {
+    //border:3px black solid;
+    margin:20px;
+    font-size: 20px;
+   // color:white;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    text-decoration: none;
+    align-content: center;
+    font-family:'SarsaparillaNF';
+}
+//editing the links 
+a:hover{
+    color: #FFDC5B;
+}
+a:visited{
+    color:#8D55FF;
+}
+a:active{
+    text-decoration: none;
+}
