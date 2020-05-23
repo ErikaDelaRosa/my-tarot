@@ -1,5 +1,5 @@
 // description of the 78 tarot cards with their meanings upright and reversed:
-const cards = [
+/*const cards = [
     {
         id: "01",
         name:"Fool",
@@ -475,6 +475,33 @@ const cards = [
         reversed:"harsh, impulsive, selfish",
     },
 ];
+*/
 
 //let data = JSON.stringify(cards);
 //export {data};
+
+function randomCard(name,image,upright,reversed) {
+    this.name = name;
+    this.upright = upright;
+    this.reversed = reversed;
+    this.image = image;
+}
+
+var deck = [
+    new randomCard('Fool','spontaneity, extravagance, beginnings','carelessness, negligence, vanity','fool'),
+    new randomCard('Magician','skill, power, action','manipulation, disgrace','magician'),
+    new randomCard('High Priest','wisdom, intuition, mystery','passion, conceit', 'high priest'),
+]
+
+
+function getRandom(num){
+    var randomNumber =Math.floor(Math.random() * num);
+    return randomNumber;
+}
+
+document.getElementById("draw").onclick = function(){
+    var index = getRandom(78);
+    var currentCard = deck[index];
+
+    document.getElementById("display").innerHTML = '<img src="../images/' + currentCard.image + '.jpg"><h3>' + currentCard.name + '</h3><p>' + currentCard.description + '</p>';
+};   
