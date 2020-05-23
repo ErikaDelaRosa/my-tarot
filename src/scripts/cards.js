@@ -237,7 +237,7 @@
     {
         id:"39",
         name:"Three of Pentacles",
-        upright:"collaboration, results of hard work",
+        upright:"Teamwork, collaboration, learning",
         reversed:"laziness, lack of teamwork",
     },
     {
@@ -480,7 +480,7 @@
 //let data = JSON.stringify(cards);
 //export {data};
 
-function randomCard(name,image,upright,reversed) {
+function randomCard(name,upright,reversed,image) {
     this.name = name;
     this.upright = upright;
     this.reversed = reversed;
@@ -491,20 +491,93 @@ var deck = [
     new randomCard('Fool','spontaneity, extravagance, beginnings','carelessness, negligence, vanity','fool'),
     new randomCard('Magician','skill, power, action','manipulation, disgrace','magician'),
     new randomCard('High Priest','wisdom, intuition, mystery','passion, conceit', 'high priest'),
+    new randomCard('Empress','initiative, femininity, fruitfulness','dependence, doubt, ignorance','empress'),
+    new randomCard('Emperor','power, protection, accomplishment','domination, rigidity','emperor'),
+    new randomCard('Hierophant','conformity, kindness','servitude, weakness','Hierophant'),
+    new randomCard('Lovers','attraction, beauty, love','failure, imbalance','lovers'),
+    new randomCard('Chariot','triumph, control','trouble, defeat','chariot'),
+    new randomCard('Strength','power, courage','abuse, weakness','strength'),
+    new randomCard('Hermit','prudence, introspection','treason, corruption','hermit'),
+    new randomCard('Wheel of Fortune','success, luck, abundance','bad luck','wheel'),
+    new randomCard('Justice','fairness, justice','unfairness, dishonesty','justice'),
+    new randomCard('Hanged Man','sacrifice, suspension','selfishness, indecision','hanged'),
+    new randomCard('Death','transformation, transition','resistance to change','death'),
+    new randomCard('Temperance','moderation, balance','excess, competing interests','temperance'),
+    new randomCard('Devil','materialism, sexuality, vehemence','breaking free, detachment, selfishness, self-destruction','devil'),
+    new randomCard('Tower','catastrophe, failure, confusion','danger, fear of change','tower'),
+    new randomCard('Star','accomplishments, promises, hope','disappointment, frustration','star'),
+    new randomCard('Moon','danger,enemies,fear','doubt, failure, unhappiness','moon'),
+    new randomCard('Sun','success, richness, wealth','lack of success, acceptance, lack of ambition','sun'),
+    new randomCard('Judgement','judgement, rebirth','conviction, repression','judgement'),
+    new randomCard('World','completion, accomplishment, fresh new start','lack of direction, lack of closure','world'),
+    new randomCard('Ace of Cups','love, new relationship','repressed feelings','ace_of_cups'),
+    new randomCard('Two of Cups','partnership, taking a love relationship to the next stage','break-up','2_of_cups'),
+    new randomCard('Three of Cups','accomplished family or friendship relationship','troubled family or friendship relationship','3_of_cups'),
+    new randomCard('Four of Cups','meditation, apathy','missed opportunity','4_of_cups'),
+    new randomCard('Five of Cups','loss, despair','forgiveness, moving on','5_of_cups'),
+    new randomCard('Six of Cups','nostalgia, paying for past mistakes','stuck in the past','6_of_cups'),
+    new randomCard('Seven of Cups','day dreaming, fantasy','illusion, lack of action to make plans come true','7_of_cups'),
+    new randomCard('Eight of Cups','disappointment, withdrawal','walking away','8_of_cups'),
+    new randomCard('Nine of Cups','satisfaction, happiness','dissatisfaction, greed','9_of_cups'),
+    new randomCard('Ten of Cups','happy relationship, harmony','broken relationship','10_of_cups'),
+    new randomCard('Page of Cups','creativity, receiving a message','lack of creativity, lack of emotional intelligence','page_of_cups'),
+    new randomCard('Knight of Cups','charm, romance','mood swings, jealousy','knight_of_cups'),
+    new randomCard('Queen of Cups','calm, compassion','dependence, lack of emotional stability','queen_of_cups'),
+    new randomCard('King of Cups','generosity, balance','manipulation, moodiness','king_of_cups'),
+    new randomCard('Ace of Pentacles','business opportunity, wealth','financial crisis, sign not to start new ventures','ace_of_pentacles'),
+    new randomCard('Two of Pentacles','balance, prioritization','lack of control in terms of finances','2_of_pentacles'),
+    new randomCard('Three of Pentacles','Teamwork, collaboration, learning','laziness, lack of teamwork','3_of_pentacles'),
+    new randomCard('Four of Pentacles','security, conservatism','greed, materialism','4_of_pentacles'),
+    new randomCard('Five of Pentacles','poverty, insecurity, worries','financial struggle recovery','5_of_pentacles'),
+    new randomCard('Six of Pentacles','generosity, prosperity','selfishness, debt','6_of_pentacles'),
+    new randomCard('Seven of Pentacles','reward, perseverance','lack of success','7_of_pentacles'),
+    new randomCard('Eight of Pentacles','engagement, learning','lack of focus, perfectionism','8_of_pentacles'),
+    new randomCard('Nine of Pentacles','financial opportunity, new career','lack of progress','9_of_pentacles'),
+    new randomCard('Ten of Pentacles','wealth, retirement','loss, financial failure','10_of_pentacles'),
+    new randomCard('Page of Pentacles','financial opportunity, new career','lack of progress','page_of_pentacles'),
+    new randomCard('Knight of Pentacles','efficiency, conservatism','"being “stuck”, boredom, laziness','knight_of_pentacles'),
+    new randomCard('Queen of Pentacles','down-to-earth, motherly','lack of work-life balance','queen_of_pentacles'),
+    new randomCard('King of Pentacles','abundance, security, control','too controlling, authoritative','king_of_pentacles'),
+    new randomCard('Ace of Swords','a new beginning, power','lack of action at the right time','ace_of_swords'),
+    new randomCard('Two of Swords','inability to make-up one´s mind','confusion over the next steps','2_of_swords'),
+    new randomCard('Three of Swords','being negatively affected by an action of someone else','recovery after a painful loss','3_of_swords'),
+    new randomCard('Four of Swords','peace, relaxation','lack of focus, nervousness','4_of_swords'),
+    new randomCard('Five of Swords','inconsistent behavior, tension','a coming change, resentments coming from the past','5_of_swords'),
+    new randomCard('Six of Swords','transition, change','stagnation, dullness','6_of_swords'),
+    new randomCard('Seven of Swords','betrayal','someone who betrayed you will be exposed','7_of_swords'),
+    new randomCard('Eight of Swords','weakness, imprisonment','pushing through to remove the obstacles','8_of_swords'),
+    new randomCard('Nine of Swords','having a feeling of failure, anxiety','depression','9_of_swords'),
+    new randomCard('Ten of Swords','tragic ending, crisis','survival, recovery','10_of_swords'),
+    new randomCard('Page of Swords','determined, smart, curious','sneaky, not serious / trustworthy','page_of_swords'),
+    new randomCard('Knight of Swords','rational, hasty, lacking practical sense','break-up, fight','knight_of_swords'),
+    new randomCard('Queen of Swords','individualist, thinking on your feet, analytical','cruel, dangerous, bitchy','queen_of_swords'),
+    new randomCard('King of Swords','wise, agile, spiritual','cold, shrewd','king_of_swords'),
+    new randomCard('Ace of Wands','a new personal beginning','bore, delays','ace_of_wands'),
+    new randomCard('Two of Wands','planning, future action','lack of action, lack of interest','2_of_wands'),
+    new randomCard('Three of Wands','results of hard work, preparation','work that does not lead anywhere, lack of foresight','3_of_wands'),
+    new randomCard('Four of Wands','harmony, sound base','fear of losing something important, personal safety is questioned','4_of_wands'),
+    new randomCard('Five of Wands','minor fight','something goes wrong, following an accidental error','5_of_wands'),
+    new randomCard('Six of Wands','personal victory, progress','defeat, lack of confidence','6_of_wands'),
+    new randomCard('Seven of Wands','competition, disputes','giving-up, being overwhelmed','7_of_wands'),
+    new randomCard('Eight of Wands','taking action in order to achieve something important','routine, lack of meaningful action to drive something forward','8_of_wands'),
+    new randomCard('Nine of Wands','something does not work as planned','lack of attention, hesitation','9_of_wands'),
+    new randomCard('Ten of Wands','stress, burden','you get rid of an obstacle','10_of_wands'),
+    new randomCard('Page of Wands','enthusiastic, ambitious, curious','superficial, unfaithful','page_of_wands'),
+    new randomCard('Knight of Wands','energetic, powerful, generous','aggressive, offensive','knight_of_wands'),
+    new randomCard('Queen of Wands','determined, attractive, kind','unpredictable, vindictive, demanding','queen_of_wands'),
+    new randomCard('King of Wands','generous, fair, leader','harsh, impulsive, selfish','king_of_wands'),
 ]
 
-
-
-
-
+//random card generator 
 function getRandom(num){
-    var randomNumber =Math.floor(Math.random() * num);
+    var randomNumber = Math.floor(Math.random() * num);
     return randomNumber;
 }
 
+//button to generate the cards
 document.getElementById("draw").onclick = function(){
     var index = getRandom(78);
     var currentCard = deck[index];
 
-    document.getElementById("display").innerHTML = '<img src="../images/' + currentCard.image + '.jpg"><h3>' + currentCard.name + '</h3><p>' + currentCard.description + '</p>';
+    document.getElementById("display").innerHTML = '<img src="../images/' + currentCard.image + '.png"><h3>' + currentCard.name + '</h3><p>' + currentCard.description + '</p>';
 };   
