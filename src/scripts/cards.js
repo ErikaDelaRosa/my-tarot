@@ -494,6 +494,9 @@ var deck = [
 ]
 
 
+
+
+
 function getRandom(num){
     var randomNumber =Math.floor(Math.random() * num);
     return randomNumber;
