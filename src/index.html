@@ -12,13 +12,7 @@
   <body>
 <!--title and subtitle-->
     <h1 id="mainTitle">Welcome to Mysticus</h1>
-    <div id="interpretation-text">
-    <h3 id="subTitle"> How to make the interpretation of the cards: </h3>
-    <p id="interpretation">
-      The seeker of answers from tarot was traditionally called the questioner or "querent", and the answer the "quesited".We can view this "questioning" as a spiritual journey, allowing divine guidance to emerge. Depending on which cards appear, and our responses to them, we may or may not like the view and sorty in the cards, but can freely decide which visual impressions and messages to keep with us.
-      <br>
-      Exact interpretation may be coloured as much by personal experience as current mood. 
-    </p></div>
+   
 
 <!--title of the cards
 <container id="cardTitle">
@@ -40,6 +34,7 @@
 </container>-->
 
 <!--new version of display the tarot game, maybe is easier if i start one by one with a button instead of a clickable card-->
+<div id="globalContainer">
 <div id="containerTarot">
 <div id="display"></div>
 <button id="draw"></button>
@@ -50,12 +45,21 @@
 <button id="draw"></button>
 </div>
 
-<div id="contaninerTarot3">
+<div id="containerTarot3">
   <div id="display"></div>
   <button id="draw"></button>
 </div>
+</div>
 <!--the new plan is to build 3 containers, one per card that will automatically include the title, picture and description, without the need of having different containers for that.-->
 
+<!--I think it fits better if I place the explanation text below the cards. The reading text in the part above may be disturbing for the users-->
+<div id="interpretation-text">
+  <h4 id="subTitle"> How to make the interpretation of the cards: </h4>
+  <p id="interpretation">
+    The seeker of answers from tarot was traditionally called the questioner or "querent", and the answer the "quesited".We can view this "questioning" as a spiritual journey, allowing divine guidance to emerge. Depending on which cards appear, and our responses to them, we may or may not like the view and sorty in the cards, but can freely decide which visual impressions and messages to keep with us.
+    <br>
+    Exact interpretation may be coloured as much by personal experience as current mood. 
+  </p></div>
 <!--extra implementations for the future-->
 <container id="extras">
   <a href="#" id="shop">Shop</a>
@@ -71,6 +75,7 @@
       <br>
        A Tarot Reading does not replace Professional Medical/Legal/Business Opinion and Advice. If you have serious problems, speak to a professional.</footer>
 
-    <script src="./scripts/index.js"></script>
+    <script src="./scripts/cards.js"></script>
+    <!--should i connect index.js and to that file the cards.js?-->
   </body>
 </html>

@@ -579,5 +579,5 @@ document.getElementById("draw").onclick = function(){
     var index = getRandom(78);
     var currentCard = deck[index];
 
-    document.getElementById("display").innerHTML = '<img src="../images/' + currentCard.image + '.png"><h3>' + currentCard.name + '</h3><p>' + currentCard.description + '</p>';
+    document.getElementById("display").innerHTML = '<img src="../../images/tarotCards78' + currentCard.image + '.png"><h3>' + currentCard.name + '</h3><p>' + currentCard.description + '</p>';
 };   
