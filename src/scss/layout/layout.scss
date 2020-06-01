@@ -45,6 +45,7 @@ body {
 //card container 
 #tarotCards {
     margin:30px;
+    //background-image: url(../../img/);
     display: flex;
     flex-direction:row;
     flex-wrap:nowrap;
@@ -58,6 +59,7 @@ body {
     height: 30rem;
     border-radius: 6%;
     background-image: url(../../img/tarotCards78/reverseCard.jpeg);
+    opacity: 0.5;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -138,7 +140,7 @@ a:active{
     text-decoration: none;
 }
 
-/////////////////////////////////////////////////////////////////////////////////////////7
+/////////////////////////////////////////////////////////////////////////////////////////
 
 #display{
     border:2px rgb(15, 40, 180) solid;
